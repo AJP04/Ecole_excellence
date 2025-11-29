@@ -1,0 +1,20 @@
+Dossier pour les images du site École Excellence
+
+Images nécessaires :
+- logo.png (logo de l'école)
+- mission.jpg (image de mission)
+- news1.jpg, news2.jpg, news3.jpg (actualités)
+- team/ (photos de l'équipe)
+- gallery/ (photos des infrastructures)
+
+Format recommandé : 
+- JPG pour les photos
+- PNG pour les logos et icônes
+- WebP pour l'optimisation
+
+Tailles recommandées :
+- Logo : 200x200px
+- Images héros : 1920x1080px
+- Cartes actualités : 400x250px
+- Photos équipe : 300x300px
+- Galerie : 800x600px

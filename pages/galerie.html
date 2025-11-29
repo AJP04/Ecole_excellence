@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Galerie - École Excellence</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/pages.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <div class="logo-icon">
+                    <i class="fas fa-graduation-cap"></i>
+                </div>
+                <span class="logo-text">École Excellence</span>
+            </div>
+            <ul class="nav-menu" id="nav-menu">
+                <li class="nav-item">
+                    <a href="../index.html" class="nav-link">Accueil</a>
+                </li>
+                <li class="nav-item">
+                    <a href="apropos.html" class="nav-link">À propos</a>
+                </li>
+                <li class="nav-item">
+                    <a href="programmes.html" class="nav-link">Programmes</a>
+                </li>
+                <li class="nav-item">
+                    <a href="equipe.html" class="nav-link">Équipe</a>
+                </li>
+                <li class="nav-item">
+                    <a href="galerie.html" class="nav-link active">Galerie</a>
+                </li>
+                <li class="nav-item">
+                    <a href="actualites.html" class="nav-link">Actualités</a>
+                </li>
+                <li class="nav-item">
+                    <a href="contact.html" class="nav-link">Contact</a>
+                </li>
+            </ul>
+            <div class="hamburger" id="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Page Header -->
+    <header class="page-header">
+        <div class="hero-image">
+            <img src="../images/gal.jpg" alt="Équipe pédagogique en réunion" class="hero-bg-image">
+            <div class="hero-overlay"></div>
+        </div>
+        <div class="container">
+            <div class="breadcrumb">
+                <a href="../index.html">Accueil</a>
+                <span class="separator">></span>
+                <span class="current">Galerie</span>
+            </div>
+            <h1 class="page-title">Galerie Photos</h1>
+            <p class="page-subtitle">Découvrez nos infrastructures et la vie de notre école</p>
+        </div>
+    </header>
+
+    <!-- Gallery Section -->
+    <section class="gallery">
+        <div class="container">
+            <div class="gallery-grid">
+                <!-- Bibliothèque -->
+                <div class="gallery-item" onclick="openLightbox('../images/gallery/bibliotheque.jpg')">
+                    <img src="../images/gallery/bibliotheque.jpg" alt="Bibliothèque" data-src="../images/gallery/bibliotheque.jpg">
+                    <div class="gallery-overlay">
+                        <div class="icon"><i class="fas fa-book"></i></div>
+                        <h3>Bibliothèque</h3>
+                        <p>Espace de lecture et de recherche moderne avec plus de 10 000 ouvrages</p>
+                    </div>
+                </div>
+
+                <!-- Laboratoire de Sciences -->
+                <div class="gallery-item" onclick="openLightbox('../images/gallery/laboratoire.jpg')">
+                    <img src="../images/gallery/laboratoire_sciences.jpg" alt="Laboratoire de Sciences" data-src="../images/gallery/laboratoire_sciences.jpg">
+                    <div class="gallery-overlay">
+                        <div class="icon"><i class="fas fa-flask"></i></div>
+                        <h3>Laboratoire de Sciences</h3>
+                        <p>Équipements de pointe pour l'expérimentation scientifique</p>
+                    </div>
+                </div>
+
+                <!-- Salle informatique -->
+                <div class="gallery-item" onclick="openLightbox('../images/gallery/informatique.jpg')">
+                    <img src="../images/gallery/salle_informatique.jpg" alt="Salle informatique" data-src="../images/gallery/salle_informatique.jpg">
+                    <div class="gallery-overlay">
+                        <div class="icon"><i class="fas fa-computer"></i></div>
+                        <h3>Salle Informatique</h3>
+                        <p>Ordinateurs dernière génération pour l'apprentissage numérique</p>
+                    </div>
+                </div>
+
+                <!-- Terrain de sport -->
+                <div class="gallery-item" onclick="openLightbox('../images/gallery/terrain-sport.jpg')">
+                    <img src="../images/gallery/terrain_jeux.jpg" alt="Terrain de sport" data-src="../images/gallery/terrain_jeux.jpg">
+                    <div class="gallery-overlay">
+                        <div class="icon"><i class="fas fa-running"></i></div>
+                        <h3>Terrain de Sport</h3>
+                        <p>Installations sportives complètes pour tous les sports</p>
+                    </div>
+                </div>
+
+                <!-- Salle de classe -->
+                <div class="gallery-item" onclick="openLightbox('../images/gallery/salle-classe.jpg')">
+                    <img src="../images/gallery/salle_classe.jpg" alt="Salle de classe" data-src="../images/gallery/salle_classe.jpg">
+                    <div class="gallery-overlay">
+                        <div class="icon"><i class="fas fa-chalkboard-teacher"></i></div>
+                        <h3>Salle de Classe</h3>
+                        <p>Environnements d'apprentissage modernes et lumineux</p>
+                    </div>
+                </div>
+
+                <!-- Salle d'arts -->
+                <div class="gallery-item" onclick="openLightbox('../images/gallery/atelier-arts.jpg')">
+                    <img src="../images/gallery/atelier_art.jpg" alt="Atelier d'arts" data-src="../images/gallery/atelier_art.jpg">
+                    <div class="gallery-overlay">
+                        <div class="icon"><i class="fas fa-palette"></i></div>
+                        <h3>Atelier d'Arts</h3>
+                        <p>Espace créatif pour l'expression artistique</p>
+                    </div>
+                </div>
+
+                <!-- Cantine -->
+                <div class="gallery-item" onclick="openLightbox('../images/gallery/cantine.jpg')">
+                    <img src="../images/gallery/cantine.jpg" alt="Restaurant scolaire" data-src="../images/gallery/cantine.jpg">
+                    <div class="gallery-overlay">
+                        <div class="icon"><i class="fas fa-utensils"></i></div>
+                        <h3>Restaurant Scolaire</h3>
+                        <p>Espace de restauration convivial avec cuisine maison</p>
+                    </div>
+                </div>
+
+                <!-- Amphithéâtre -->
+                <div class="gallery-item" onclick="openLightbox('../images/gallery/amphitheatre.jpg')">
+                    <img src="../images/gallery/theatre.jpg" alt="Amphithéâtre" data-src="../images/gallery/theatre.jpg">
+                    <div class="gallery-overlay">
+                        <div class="icon"><i class="fas fa-theater-masks"></i></div>
+                        <h3>Amphithéâtre</h3>
+                        <p>Espace pour conférences, spectacles et événements</p>
+                    </div>
+                </div>
+
+                <!-- Cour de récréation -->
+                <div class="gallery-item" onclick="openLightbox('../images/gallery/cour-recreation.jpg')">
+                    <img src="../images/gallery/cours.jpg" alt="Cour de récréation" data-src="../images/gallery/cours.jpg">
+                    <div class="gallery-overlay">
+                        <div class="icon"><i class="fas fa-tree"></i></div>
+                        <h3>Cour de Récréation</h3>
+                        <p>Espaces verts pour la détente et les loisirs</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Lightbox -->
+    <div class="lightbox" id="lightbox">
+        <div class="lightbox-content">
+            <button class="lightbox-close" onclick="closeLightbox()">
+                <i class="fas fa-times"></i>
+            </button>
+            <img id="lightbox-image" src="" alt="">
+            <button class="lightbox-nav lightbox-prev" onclick="prevImage()">
+                <i class="fas fa-chevron-left"></i>
+            </button>
+            <button class="lightbox-nav lightbox-next" onclick="nextImage()">
+                <i class="fas fa-chevron-right"></i>
+            </button>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <div class="footer-logo">
+                        <i class="fas fa-graduation-cap"></i>
+                        <span>École Excellence</span>
+                    </div>
+                    <p>Formation d'excellence pour un avenir brillant</p>
+                    <div class="social-links">
+                        <a href="#" aria-label="Facebook"><i class="fab fa-facebook"></i></a>
+                        <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                        <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                        <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
+                    </div>
+                </div>
+                <div class="footer-section">
+                    <h4>Navigation</h4>
+                    <ul>
+                        <li><a href="../index.html">Accueil</a></li>
+                        <li><a href="apropos.html">À propos</a></li>
+                        <li><a href="programmes.html">Programmes</a></li>
+                        <li><a href="equipe.html">Équipe</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Services</h4>
+                    <ul>
+                        <li><a href="galerie.html">Galerie</a></li>
+                        <li><a href="actualites.html">Actualités</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                        <li><a href="#" onclick="alert('Page en construction')">Inscriptions</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Contact</h4>
+                    <div class="contact-info">
+                        <p><i class="fas fa-map-marker-alt"></i> 123 Rue de l'Éducation, 75001 Paris</p>
+                        <p><i class="fas fa-phone"></i> 01 23 45 67 89</p>
+                        <p><i class="fas fa-envelope"></i> contact@ecole-excellence.fr</p>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 École Excellence. Tous droits réservés.</p>
+                <div class="footer-links">
+                    <a href="#" onclick="alert('Page en construction')">Mentions légales</a>
+                    <a href="#" onclick="alert('Page en construction')">Politique de confidentialité</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="../js/script.js"></script>
+    <script>
+        // Lightbox functionality
+        let currentImageIndex = 0;
+        const galleryImages = [
+            '../images/gallery/bibliotheque.jpg',
+            '../images/gallery/laboratoire.jpg',
+            '../images/gallery/informatique.jpg',
+            '../images/gallery/terrain-sport.jpg',
+            '../images/gallery/salle-classe.jpg',
+            '../images/gallery/atelier-arts.jpg',
+            '../images/gallery/cantine.jpg',
+            '../images/gallery/amphitheatre.jpg',
+            '../images/gallery/cour-recreation.jpg'
+        ];
+
+        function openLightbox(imageSrc) {
+            const lightbox = document.getElementById('lightbox');
+            const lightboxImage = document.getElementById('lightbox-image');
+            
+            currentImageIndex = galleryImages.indexOf(imageSrc);
+            lightboxImage.src = imageSrc;
+            lightbox.classList.add('active');
+            document.body.style.overflow = 'hidden';
+        }
+
+        function closeLightbox() {
+            const lightbox = document.getElementById('lightbox');
+            lightbox.classList.remove('active');
+            document.body.style.overflow = 'auto';
+        }
+
+        function nextImage() {
+            currentImageIndex = (currentImageIndex + 1) % galleryImages.length;
+            document.getElementById('lightbox-image').src = galleryImages[currentImageIndex];
+        }
+
+        function prevImage() {
+            currentImageIndex = (currentImageIndex - 1 + galleryImages.length) % galleryImages.length;
+            document.getElementById('lightbox-image').src = galleryImages[currentImageIndex];
+        }
+
+        // Keyboard navigation
+        document.addEventListener('keydown', function(e) {
+            const lightbox = document.getElementById('lightbox');
+            if (lightbox.classList.contains('active')) {
+                if (e.key === 'Escape') {
+                    closeLightbox();
+                } else if (e.key === 'ArrowLeft') {
+                    prevImage();
+                } else if (e.key === 'ArrowRight') {
+                    nextImage();
+                }
+            }
+        });
+
+        // Close lightbox when clicking outside image
+        document.getElementById('lightbox').addEventListener('click', function(e) {
+            if (e.target === this) {
+                closeLightbox();
+            }
+        });
+    </script>
+</body>
+</html>
